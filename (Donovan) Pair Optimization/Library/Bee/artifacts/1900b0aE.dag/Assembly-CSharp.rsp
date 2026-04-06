@@ -368,6 +368,7 @@
 -analyzer:"C:/Program Files/Unity 2022.3.62f2/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2022.3.62f2/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Input/InputActions.cs"
+"Assets/Scripts/Bullet.cs"
 "Assets/Scripts/PlayerManager.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0

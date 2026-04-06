@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\do798543\\Documents\\GitHub\\Pair Optimization\\(Donovan) Pair Optimization\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|c:\\users\\do798543\\documents\\github\\pair optimization\\(donovan) pair optimization\\assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|c:\\users\\do798543\\documents\\github\\pair optimization\\(donovan) pair optimization\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|c:\\users\\do798543\\documents\\github\\pair optimization\\(donovan) pair optimization\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|C:\\Users\\do798543\\Documents\\GitHub\\Pair Optimization\\(Donovan) Pair Optimization\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|c:\\users\\do798543\\documents\\github\\pair optimization\\(donovan) pair optimization\\assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\do798543\\Documents\\GitHub\\Pair Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
+              "ToolTip": "C:\\Users\\do798543\\Documents\\GitHub\\Pair Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T18:55:14.228Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -35,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerManager.cs",
               "DocumentMoniker": "C:\\Users\\do798543\\Documents\\GitHub\\Pair Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\PlayerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManager.cs",
               "ToolTip": "C:\\Users\\do798543\\Documents\\GitHub\\Pair Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\PlayerManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T18:09:40.839Z",
               "EditorCaption": ""
