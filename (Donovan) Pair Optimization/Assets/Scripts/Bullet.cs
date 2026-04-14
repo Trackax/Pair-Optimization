@@ -8,6 +8,11 @@ public class Bullet : MonoBehaviour
     public float speed;
     public Transform target;
 
+    private void Awake()
+    {
+        target = GameObject.FindWithTag("Target").transform;
+    }
+
     void Update()
     {
         Vector3 targetPos = new Vector3(transform.position.x, target.position.y, transform.position.z);

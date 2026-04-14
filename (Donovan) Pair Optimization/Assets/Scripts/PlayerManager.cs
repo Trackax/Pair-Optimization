@@ -10,10 +10,11 @@ public class PlayerManager : MonoBehaviour
     PlayerInput playerInput;
     PlayerAttack playerAttack;
 
-    public GameObject bullet;
-    public Transform bulletStart;
-
     public float moveSpeed;
+
+    public float maxFireCooldown;
+    [HideInInspector] public float fireCooldown;
+    [HideInInspector] public bool fired = false;
 
     public InputAction fireAction;
 
@@ -28,13 +29,27 @@ public class PlayerManager : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         playerAttack = GetComponent<PlayerAttack>();
         fireAction = playerInput.actions.FindAction("Fire");
+        fireCooldown = maxFireCooldown;
     }
 
     private void Update()
     {
         if (fireAction.WasPressedThisFrame())
         {
-            playerAttack.FireBullet();
+            if (!fired)
+            {
+                fired = true;
+                playerAttack.FireBullet();
+            }
+        }
+        if (fired)
+        {
+            fireCooldown -= Time.deltaTime;
+        }
+        if (fireCooldown <= 0)
+        {
+            fired = false;
+            fireCooldown = maxFireCooldown;
         }
     }
 
