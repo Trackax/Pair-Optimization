@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|c:\\users\\do798543\\documents\\github\\pair-optimization\\(donovan) pair optimization\\assets\\scripts\\bulletpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bulletpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|c:\\users\\do798543\\documents\\github\\pair-optimization\\(donovan) pair optimization\\assets\\scripts\\bulletpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bulletpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|c:\\users\\do798543\\documents\\github\\pair-optimization\\(donovan) pair optimization\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{628D8900-3732-4333-DEF0-437C57B407AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BulletPool.cs",
               "DocumentMoniker": "C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\BulletPool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BulletPool.cs",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAttack.cs",
@@ -55,12 +55,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerAttack.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T19:12:38.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T19:12:38.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
@@ -68,20 +67,20 @@
               "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T18:55:14.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T18:55:14.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\do798543\\Documents\\GitHub\\Pair-Optimization\\(Donovan) Pair Optimization\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T18:09:56.767Z"
+              "WhenOpened": "2026-04-06T18:09:56.767Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
