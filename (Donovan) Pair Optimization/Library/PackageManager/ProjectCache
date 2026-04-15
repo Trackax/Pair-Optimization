@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639111264629889648
-    m_Hash: 3203808406
+      ticks: 639118155238751910
+    m_Hash: 3042596264
   m_LockFileStatus:
     m_FilePath: C:/Users/Donovan/Desktop/Pair-Optimization/(Donovan) Pair Optimization/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639111264629889648
-    m_Hash: 3435502808
+      ticks: 639118155238787283
+    m_Hash: 3203753981
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,65 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/Donovan/Desktop/Pair-Optimization/(Donovan) Pair Optimization/Packages
 m_EditorVersion: 2022.3.62f2 (7670c08855a9)
 m_ResolvedPackages:
+- packageId: com.unity.2d.sprite@1.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0
+  source: 2
+  resolvedPath: C:\Users\Donovan\Desktop\Pair-Optimization\(Donovan) Pair Optimization\Library\PackageCache\com.unity.2d.sprite@1.0.0
+  assetPath: Packages/com.unity.2d.sprite
+  name: com.unity.2d.sprite
+  displayName: 2D Sprite
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: Use Unity Sprite Editor Window to create and edit Sprite asset properties
+    like pivot, borders and Physics shape
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - 2d
+  - sprite
+  - sprite editor window
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.collab-proxy@2.12.4
   testable: 0
   isDirectDependency: 1
@@ -3376,12 +3435,14 @@ m_ResolvedPackages:
     - 3.0.37
     - 3.0.38
     - 3.0.39
+    - 3.0.40
     compatible:
     - 3.0.36
     - 3.0.37
     - 3.0.38
     - 3.0.39
-    recommended: 3.0.39
+    - 3.0.40
+    recommended: 3.0.40
     deprecated:
     - 3.0.37
   dependencies:
