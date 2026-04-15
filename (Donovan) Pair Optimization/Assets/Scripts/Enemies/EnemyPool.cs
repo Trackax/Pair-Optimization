@@ -15,6 +15,7 @@ public class EnemyPool : MonoBehaviour
 
     private void Update()
     {
+        timeBetweenSpawns -= 0.01f * Time.deltaTime;
         if (player.activeInHierarchy)
         {
             if (Time.time > timeSinceLastSpawm)
@@ -22,6 +23,10 @@ public class EnemyPool : MonoBehaviour
                 GameObject enemy = CreateEnemy();
                 timeSinceLastSpawm = Time.time + timeBetweenSpawns;
             }
+        }
+        if (!player.activeInHierarchy)
+        {
+            timeBetweenSpawns = 1;
         }
     }
 

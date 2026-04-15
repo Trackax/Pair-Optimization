@@ -7,6 +7,8 @@ TagManager:
   - Target
   - SlowEnemy
   - Boundary
+  - Score
+  - HighScore
   layers:
   - Default
   - TransparentFX

@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\BulletPool.cs" />
     <Compile Include="Assets\Scripts\Player\Bullet.cs" />
+    <Compile Include="Assets\Scripts\World\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyPool.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
@@ -69,6 +70,8 @@
     <Compile Include="Assets\Input\InputActions.cs" />
     <Compile Include="Assets\Scripts\World\LifeManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\World\GameSceneManager.cs" />
+    <Compile Include="Assets\StarfieldMaterials\Scripts\Move.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -86,6 +89,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\StarfieldMaterials\README\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

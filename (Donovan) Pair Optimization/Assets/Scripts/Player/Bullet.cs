@@ -5,7 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Bullet : MonoBehaviour
 {
-    PlayerManager manager;
+    ScoreManager scoreManager;
     BulletPool bulletPool;
     EnemyPool enemyPool;
     public float speed;
@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     {
         enemyPool = FindAnyObjectByType<EnemyPool>();
         bulletPool = FindAnyObjectByType<BulletPool>();
-        manager = FindAnyObjectByType<PlayerManager>();
+        scoreManager = FindAnyObjectByType<ScoreManager>();
         player = GameObject.FindWithTag("Player");
         transform.position = player.transform.position;
         transform.rotation = player.transform.rotation;
@@ -36,6 +36,7 @@ public class Bullet : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("SlowEnemy"))
         {
+            scoreManager.AddPoint();
             enemyPool.ReturnObject(collision.gameObject);
             bulletPool.ReturnObject(this.gameObject);
         }
