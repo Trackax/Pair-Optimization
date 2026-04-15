@@ -9,12 +9,11 @@ public class Bullet : MonoBehaviour
     BulletPool bulletPool;
     EnemyPool enemyPool;
     public float speed;
-    Transform target;
     GameObject player;
+    public float height;
 
     private void Awake()
     {
-        target = GameObject.FindWithTag("Target").transform;
         enemyPool = FindAnyObjectByType<EnemyPool>();
         bulletPool = FindAnyObjectByType<BulletPool>();
         manager = FindAnyObjectByType<PlayerManager>();
@@ -25,19 +24,19 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        Vector3 targetPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
+        Vector3 targetPos = new Vector3(transform.position.x, transform.position.y + height, transform.position.z);
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Boundary"))
+        {
+            bulletPool.ReturnObject(this.gameObject);
+        }
         if (collision.gameObject.CompareTag("SlowEnemy"))
         {
             enemyPool.ReturnObject(collision.gameObject);
-            bulletPool.ReturnObject(this.gameObject);
-        }
-        if (collision.gameObject.CompareTag("Boundary"))
-        {
             bulletPool.ReturnObject(this.gameObject);
         }
     }

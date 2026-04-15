@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class LifeManager : MonoBehaviour
 {
     public GameObject[] life;
+    public int currentLives;
     public GameObject player;
+    public PlayerInput playerInput;
 
     private void Update()
     {
@@ -18,6 +21,12 @@ public class LifeManager : MonoBehaviour
     private IEnumerator RespawnPlayer()
     {
         yield return new WaitForSeconds(2f);
-        player.SetActive(true);
+        if (currentLives >= 0)
+        {
+            
+            life[currentLives].SetActive(false);
+            player.SetActive(true);
+            playerInput.enabled = true;
+        }
     }
 }

@@ -6,10 +6,11 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
     PlayerMovement playerMovement;
-    [HideInInspector] public Rigidbody rb;
+    [HideInInspector] public Rigidbody2D rb;
     PlayerInput playerInput;
     PlayerAttack playerAttack;
     public Transform spawn;
+    public LifeManager life;
 
     public float moveSpeed;
 
@@ -26,11 +27,15 @@ public class PlayerManager : MonoBehaviour
     private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
         playerAttack = GetComponent<PlayerAttack>();
         fireAction = playerInput.actions.FindAction("Fire");
         fireCooldown = maxFireCooldown;
+    }
+
+    private void OnEnable()
+    {
         transform.position = spawn.position;
     }
 
@@ -60,10 +65,12 @@ public class PlayerManager : MonoBehaviour
         playerMovement.SetPlayerVelocity();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("SlowEnemy"))
         {
+            life.currentLives--;
+            playerInput.enabled = false;
             this.gameObject.SetActive(false);
         }
     }
