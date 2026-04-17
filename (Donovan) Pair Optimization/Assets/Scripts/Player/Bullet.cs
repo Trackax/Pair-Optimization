@@ -5,6 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Bullet : MonoBehaviour
 {
+    AudioManager manager;
     ScoreManager scoreManager;
     BulletPool bulletPool;
     EnemyPool enemyPool;
@@ -14,6 +15,7 @@ public class Bullet : MonoBehaviour
 
     private void Awake()
     {
+        manager = FindAnyObjectByType<AudioManager>();
         enemyPool = FindAnyObjectByType<EnemyPool>();
         bulletPool = FindAnyObjectByType<BulletPool>();
         scoreManager = FindAnyObjectByType<ScoreManager>();
@@ -36,6 +38,7 @@ public class Bullet : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("SlowEnemy"))
         {
+            manager.EnemyDie();
             scoreManager.AddPoint();
             enemyPool.ReturnObject(collision.gameObject);
             bulletPool.ReturnObject(this.gameObject);

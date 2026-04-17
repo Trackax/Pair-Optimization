@@ -11,6 +11,7 @@ public class LifeManager : MonoBehaviour
     public PlayerInput playerInput;
     public GameObject gameOverScreen;
     public GameObject game;
+    public GameObject gameMusic;
 
     private void Update()
     {
@@ -22,6 +23,7 @@ public class LifeManager : MonoBehaviour
         {
             gameOverScreen.SetActive(true);
             game.SetActive(false);
+            gameMusic.SetActive(false);
         }
     }
 

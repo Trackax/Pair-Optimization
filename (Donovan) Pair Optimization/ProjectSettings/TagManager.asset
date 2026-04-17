@@ -9,6 +9,8 @@ TagManager:
   - Boundary
   - Score
   - HighScore
+  - Audio
+  - EnemyDie
   layers:
   - Default
   - TransparentFX

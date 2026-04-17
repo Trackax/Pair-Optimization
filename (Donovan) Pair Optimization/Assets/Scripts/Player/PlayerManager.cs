@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
+    AudioManager audioManager;
     PlayerMovement playerMovement;
     [HideInInspector] public Rigidbody2D rb;
     PlayerInput playerInput;
@@ -26,6 +27,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         playerMovement = GetComponent<PlayerMovement>();
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
@@ -69,6 +71,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("SlowEnemy"))
         {
+            audioManager.PlayerDie();
             life.currentLives--;
             playerInput.enabled = false;
             this.gameObject.SetActive(false);
