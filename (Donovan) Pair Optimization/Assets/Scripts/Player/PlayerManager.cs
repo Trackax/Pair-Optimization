@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
+    public PowerupManager powerupManager;
     AudioManager audioManager;
     PlayerMovement playerMovement;
     [HideInInspector] public Rigidbody2D rb;
@@ -13,9 +15,13 @@ public class PlayerManager : MonoBehaviour
     public Transform spawn;
     public LifeManager life;
 
+    public bool upgrade;
+    public float maxUpgradeCooldown;
+    private float upgradeCooldown;
+
     public float moveSpeed;
 
-    public float maxFireCooldown;
+    [HideInInspector] public float maxFireCooldown = 1.5f;
     [HideInInspector] public float fireCooldown;
     [HideInInspector] public bool fired = false;
 
@@ -27,6 +33,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
+        upgradeCooldown = maxUpgradeCooldown;
         audioManager = FindAnyObjectByType<AudioManager>();
         playerMovement = GetComponent<PlayerMovement>();
         rb = GetComponent<Rigidbody2D>();
@@ -60,6 +67,18 @@ public class PlayerManager : MonoBehaviour
             fired = false;
             fireCooldown = maxFireCooldown;
         }
+
+        if (upgrade)
+        {
+            upgradeCooldown -= Time.deltaTime;
+            maxFireCooldown = 0.75f;
+        }
+        if (upgradeCooldown <= 0)
+        {
+            upgrade = false;
+            upgradeCooldown = maxUpgradeCooldown;
+            maxFireCooldown = 1.5f;
+        }
     }
 
     private void FixedUpdate()
@@ -75,6 +94,12 @@ public class PlayerManager : MonoBehaviour
             life.currentLives--;
             playerInput.enabled = false;
             this.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("PowerUp"))
+        {
+            powerupManager.ReturnObject(collision.gameObject);
+            upgrade = true;
+            audioManager.PlayerUpgrade();
         }
     }
 }

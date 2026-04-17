@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/respin/2022.3.62f2-4af31df585-v2' branch; Version is '2022.3.62f2 (7670c08855a9) revision 7762112'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) 64bit Enterprise' Language: 'en' Physical Memory: 65234 MB
+OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'en' Physical Memory: 65315 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2022.3.62f2\Editor\Unity.exe
+D:\Program Files\Unity Hub\Editor\2022.3.62f2\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker5
 -projectPath
-C:/Users/do798543/Documents/GitHub/Pair Optimization/(Donovan) Pair Optimization
+C:/Users/Donovan/Desktop/Pair-Optimization/(Donovan) Pair Optimization
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-49355
-Successfully changed project path to: C:/Users/do798543/Documents/GitHub/Pair Optimization/(Donovan) Pair Optimization
-C:/Users/do798543/Documents/GitHub/Pair Optimization/(Donovan) Pair Optimization
+57486
+Successfully changed project path to: C:/Users/Donovan/Desktop/Pair-Optimization/(Donovan) Pair Optimization
+C:/Users/Donovan/Desktop/Pair-Optimization/(Donovan) Pair Optimization
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,88 +49,75 @@ C:/Users/do798543/Documents/GitHub/Pair Optimization/(Donovan) Pair Optimization
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [34992]  Target information:
+Player connection [49960]  Target information:
 
-Player connection [34992]  * "[IP] 10.123.205.92 [Port] 0 [Flags] 2 [Guid] 728993332 [EditorId] 728993332 [Version] 1048832 [Id] WindowsEditor(7,DTC9W8WK84) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [49960]  * "[IP] 192.168.0.173 [Port] 0 [Flags] 2 [Guid] 4291506687 [EditorId] 4291506687 [Version] 1048832 [Id] WindowsEditor(7,BeQuiet) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [34992]  * "[IP] 172.25.208.1 [Port] 0 [Flags] 2 [Guid] 728993332 [EditorId] 728993332 [Version] 1048832 [Id] WindowsEditor(7,DTC9W8WK84) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [34992] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [34992] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [49960] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [49960] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
-[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
-Refreshing native plugins compatible for Editor in 56.08 ms, found 4 plugins.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+Refreshing native plugins compatible for Editor in 9.63 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.62f2 (7670c08855a9)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.62f2/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/do798543/Documents/GitHub/Pair Optimization/(Donovan) Pair Optimization/Assets
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity Hub/Editor/2022.3.62f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Donovan/Desktop/Pair-Optimization/(Donovan) Pair Optimization/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4090 (ID=0x2684)
+    Renderer: NVIDIA GeForce RTX 4080 (ID=0x2704)
     Vendor:   NVIDIA
-    VRAM:     24142 MB
-    Driver:   32.0.15.8195
+    VRAM:     16050 MB
+    Driver:   32.0.15.8129
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 2022.3.62f2/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 2022.3.62f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity 2022.3.62f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
+Mono path[0] = 'D:/Program Files/Unity Hub/Editor/2022.3.62f2/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity Hub/Editor/2022.3.62f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Program Files/Unity Hub/Editor/2022.3.62f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 2022.3.62f2/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity 2022.3.62f2/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity 2022.3.62f2/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity 2022.3.62f2/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Register platform support module: C:/Program Files/Unity 2022.3.62f2/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
-Register platform support module: C:/Program Files/Unity 2022.3.62f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity 2022.3.62f2/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity 2022.3.62f2/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.018692 seconds.
-- Loaded All Assemblies, in  0.938 seconds
-Native extension for UWP target not found
-Native extension for LinuxStandalone target not found
+Register platform support module: D:/Program Files/Unity Hub/Editor/2022.3.62f2/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Program Files/Unity Hub/Editor/2022.3.62f2/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: D:/Program Files/Unity Hub/Editor/2022.3.62f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003274 seconds.
+- Loaded All Assemblies, in  0.214 seconds
 Native extension for WindowsStandalone target not found
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-Native extension for AppleTV target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
+Android Extension - Scanning For ADB Devices 240 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.263 seconds
-Domain Reload Profiling: 1199ms
-	BeginReloadAssembly (73ms)
+- Finished resetting the current domain, in  0.432 seconds
+Domain Reload Profiling: 646ms
+	BeginReloadAssembly (71ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (130ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (678ms)
-		LoadAssemblies (74ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (87ms)
+		LoadAssemblies (71ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (673ms)
-			TypeCache.Refresh (672ms)
-				TypeCache.ScanAssembly (490ms)
+		AnalyzeDomain (85ms)
+			TypeCache.Refresh (84ms)
+				TypeCache.ScanAssembly (75ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (264ms)
+	FinalizeReload (432ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (238ms)
+		SetupLoadedEditorAssemblies (404ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (130ms)
+			InitializePlatformSupportModulesInManaged (303ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
 			ProcessInitializeOnLoadAttributes (67ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -139,57 +126,52 @@ Domain Reload Profiling: 1199ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.561 seconds
-Native extension for UWP target not found
-Native extension for LinuxStandalone target not found
+- Loaded All Assemblies, in  0.424 seconds
 Native extension for WindowsStandalone target not found
-Native extension for AppleTV target not found
 Native extension for iOS target not found
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.380 seconds
-Domain Reload Profiling: 939ms
-	BeginReloadAssembly (100ms)
+- Finished resetting the current domain, in  0.361 seconds
+Domain Reload Profiling: 784ms
+	BeginReloadAssembly (88ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
+		CreateAndSetChildDomain (14ms)
 	RebuildCommonClasses (19ms)
 	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (406ms)
-		LoadAssemblies (251ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (287ms)
+		LoadAssemblies (211ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (216ms)
-			TypeCache.Refresh (199ms)
-				TypeCache.ScanAssembly (187ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (108ms)
+				TypeCache.ScanAssembly (96ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (381ms)
+	FinalizeReload (361ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (291ms)
+		SetupLoadedEditorAssemblies (265ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
+			InitializePlatformSupportModulesInManaged (16ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (38ms)
-			ProcessInitializeOnLoadAttributes (205ms)
-			ProcessInitializeOnLoadMethodAttributes (14ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (197ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 6.73 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 3.34 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4007 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (56.1 KB). Loaded Objects now: 4476.
-Memory consumption went from 143.9 MB to 143.9 MB.
-Total: 2.519300 ms (FindLiveObjects: 0.235700 ms CreateObjectMapping: 0.265800 ms MarkObjects: 1.932700 ms  DeleteObjects: 0.083700 ms)
+Unloading 4009 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (56.5 KB). Loaded Objects now: 4478.
+Memory consumption went from 144.2 MB to 144.1 MB.
+Total: 2.086300 ms (FindLiveObjects: 0.155300 ms CreateObjectMapping: 0.048900 ms MarkObjects: 1.816500 ms  DeleteObjects: 0.064800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -204,8 +186,77 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/SceneManager.cs: d58d51c04dae40ec635353c4a73b2e02 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19035.486018 seconds.
+  path: Assets/8Bit Sfx One Shot/alarm 1.wav
+  artifactKey: Guid(62598e38e8bf2704d8cfd40aa7777287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8Bit Sfx One Shot/alarm 1.wav using Guid(62598e38e8bf2704d8cfd40aa7777287) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: 'b794c94873b551338526f172a91d946b') in 0.093231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/8Bit Sfx One Shot/fast arp 2.wav
+  artifactKey: Guid(83deb8f3eb0e3114799980e355c63e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8Bit Sfx One Shot/fast arp 2.wav using Guid(83deb8f3eb0e3114799980e355c63e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '795ae43276af593dc55b735f89d3d628') in 0.027264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/8Bit Sfx One Shot/power 2.wav
+  artifactKey: Guid(9f4c9ca9f9214ff42aca6b1bd28cd0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8Bit Sfx One Shot/power 2.wav using Guid(9f4c9ca9f9214ff42aca6b1bd28cd0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '124ef3582474180cf2d09c115edfc270') in 0.031556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/8Bit Sfx One Shot/riser 2.wav
+  artifactKey: Guid(26d1850f0acc9384a9d16964acde0948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8Bit Sfx One Shot/riser 2.wav using Guid(26d1850f0acc9384a9d16964acde0948) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '580054bf0012816a1b20595229b8d437') in 0.021831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/8Bit Sfx One Shot/alarm 2.wav
+  artifactKey: Guid(dd390b06edbf8ea479089fcae173cfd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8Bit Sfx One Shot/alarm 2.wav using Guid(dd390b06edbf8ea479089fcae173cfd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '99884139f042ae253645d47322e22a0f') in 0.028514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/8Bit Sfx One Shot/alarm 3.wav
+  artifactKey: Guid(bb86ca4a25202ac47a26cc24f57dac2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8Bit Sfx One Shot/alarm 3.wav using Guid(bb86ca4a25202ac47a26cc24f57dac2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '3b457f661effb2fec79f7cb30d5e45a1') in 0.025308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/8Bit Sfx One Shot/explosion 1.wav
+  artifactKey: Guid(831a206310216fa4786df4062604eaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8Bit Sfx One Shot/explosion 1.wav using Guid(831a206310216fa4786df4062604eaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: 'e37147c979cc3beda6ba6e4d6f6505b7') in 0.022397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server

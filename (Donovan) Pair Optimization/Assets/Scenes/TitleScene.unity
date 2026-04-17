@@ -955,6 +955,7 @@ MonoBehaviour:
   fire: {fileID: 8300000, guid: 78e470ce2c39a93468568c1f0260cbb5, type: 3}
   enemyDie: {fileID: 8300000, guid: 831a206310216fa4786df4062604eaae, type: 3}
   playerDie: {fileID: 8300000, guid: 5b9504328e3ada14ba512e5da384bce7, type: 3}
+  upgrade: {fileID: 8300000, guid: ab91ccdfde194784c96bbf93a128cc18, type: 3}
 --- !u!4 &1221500993
 Transform:
   m_ObjectHideFlags: 0

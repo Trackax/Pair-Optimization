@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip fire;
     public AudioClip enemyDie;
     public AudioClip playerDie;
+    public AudioClip upgrade;
 
     AudioSource source;
 
@@ -28,5 +29,10 @@ public class AudioManager : MonoBehaviour
     public void PlayerDie()
     {
         source.PlayOneShot(playerDie);
+    }
+
+    public void PlayerUpgrade()
+    {
+        source.PlayOneShot(upgrade);
     }
 }

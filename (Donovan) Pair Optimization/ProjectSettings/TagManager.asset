@@ -11,6 +11,7 @@ TagManager:
   - HighScore
   - Audio
   - EnemyDie
+  - PowerUp
   layers:
   - Default
   - TransparentFX

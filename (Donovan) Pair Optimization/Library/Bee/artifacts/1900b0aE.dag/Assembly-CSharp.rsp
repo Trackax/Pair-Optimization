@@ -376,6 +376,7 @@
 "Assets/Scripts/World/AudioManager.cs"
 "Assets/Scripts/World/GameSceneManager.cs"
 "Assets/Scripts/World/LifeManager.cs"
+"Assets/Scripts/World/PowerupManager.cs"
 "Assets/Scripts/World/ScoreManager.cs"
 "Assets/StarfieldMaterials/Scripts/Move.cs"
 -langversion:9.0
