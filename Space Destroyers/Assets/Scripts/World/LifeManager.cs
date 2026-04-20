@@ -12,10 +12,11 @@ public class LifeManager : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject game;
     public GameObject gameMusic;
+    bool isRespawning;
 
     private void Update()
     {
-        if (!player.activeInHierarchy)
+        if (!player.activeInHierarchy && !isRespawning)
         {
             StartCoroutine(RespawnPlayer());
         }
@@ -27,9 +28,13 @@ public class LifeManager : MonoBehaviour
         }
     }
 
+
+    // optimization 3: added a boolean to prevent coroutine from being started hundreds of times
     private IEnumerator RespawnPlayer()
     {
+        isRespawning = true;
         yield return new WaitForSeconds(2f);
+        isRespawning = false;
         if (currentLives >= 0)
         {
             life[currentLives].SetActive(false);

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager instance;
+
     public AudioClip fire;
     public AudioClip enemyDie;
     public AudioClip playerDie;
@@ -13,6 +15,7 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         source = GetComponent<AudioSource>();
     }
 

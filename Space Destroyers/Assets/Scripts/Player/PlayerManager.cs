@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
     public PowerupManager powerupManager;
-    AudioManager audioManager;
+    //AudioManager audioManager;
     PlayerMovement playerMovement;
     [HideInInspector] public Rigidbody2D rb;
     PlayerInput playerInput;
@@ -34,7 +34,10 @@ public class PlayerManager : MonoBehaviour
     private void Awake()
     {
         upgradeCooldown = maxUpgradeCooldown;
-        audioManager = FindAnyObjectByType<AudioManager>();
+
+        // optimization 1: searching every gameobject for a component is expensive, so i turned audio manager into a singleton to be referenced
+        //audioManager = GetComponent<AudioManager>();
+
         playerMovement = GetComponent<PlayerMovement>();
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
@@ -48,38 +51,84 @@ public class PlayerManager : MonoBehaviour
         transform.position = spawn.position;
     }
 
+    // optimization 2: reworked function logic to avoid unnecessary comparisons
+
     private void Update()
     {
-        if (fireAction.WasPressedThisFrame())
+        HandleFire();
+        HandleUpgrade();
+    }
+
+    private void HandleFire()
+    {
+        if (fireAction.WasPressedThisFrame() && !fired)
         {
-            if (!fired)
-            {
-                fired = true;
-                playerAttack.FireBullet();
-            }
+            fired = true;
+            playerAttack.FireBullet();
         }
-        if (fired)
-        {
-            fireCooldown -= Time.deltaTime;
-        }
-        if (fireCooldown <= 0)
+
+        if (!fired) return;
+
+        fireCooldown -= Time.deltaTime;
+
+        if (fireCooldown <= 0f)
         {
             fired = false;
             fireCooldown = maxFireCooldown;
         }
+    }
 
-        if (upgrade)
-        {
-            upgradeCooldown -= Time.deltaTime;
-            maxFireCooldown = 0.75f;
-        }
-        if (upgradeCooldown <= 0)
+    private void HandleUpgrade()
+    {
+        if (!upgrade) return;
+
+        upgradeCooldown -= Time.deltaTime;
+
+        if (upgradeCooldown <= 0f)
         {
             upgrade = false;
             upgradeCooldown = maxUpgradeCooldown;
             maxFireCooldown = 1.5f;
+            return;
         }
+
+        maxFireCooldown = 0.75f;
     }
+
+
+
+    //private void Update()
+    //{
+    //    if (fireAction.WasPressedThisFrame())
+    //    {
+    //        if (!fired)
+    //        {
+    //            fired = true;
+    //            playerAttack.FireBullet();
+    //        }
+    //    }
+    //    if (fired)
+    //    {
+    //        fireCooldown -= Time.deltaTime;
+    //    }
+    //    if (fireCooldown <= 0)
+    //    {
+    //        fired = false;
+    //        fireCooldown = maxFireCooldown;
+    //    }
+
+    //    if (upgrade)
+    //    {
+    //        upgradeCooldown -= Time.deltaTime;
+    //        maxFireCooldown = 0.75f;
+    //    }
+    //    if (upgradeCooldown <= 0)
+    //    {
+    //        upgrade = false;
+    //        upgradeCooldown = maxUpgradeCooldown;
+    //        maxFireCooldown = 1.5f;
+    //    }
+    //}
 
     private void FixedUpdate()
     {
@@ -90,7 +139,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("SlowEnemy"))
         {
-            audioManager.PlayerDie();
+            AudioManager.instance.PlayerDie();
             life.currentLives--;
             playerInput.enabled = false;
             this.gameObject.SetActive(false);
@@ -99,7 +148,7 @@ public class PlayerManager : MonoBehaviour
         {
             powerupManager.ReturnObject(collision.gameObject);
             upgrade = true;
-            audioManager.PlayerUpgrade();
+            AudioManager.instance.PlayerUpgrade();
         }
     }
 }
